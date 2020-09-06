@@ -1,6 +1,6 @@
 //
 //  main.c
-//  Card
+//  CARD GAME WORKS WITH cards.txt FILE!
 //
 //  Created by Hunter Spallas on 4/5/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
