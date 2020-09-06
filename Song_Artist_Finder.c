@@ -1,7 +1,7 @@
 //
 //  main.c
 //  2
-//
+//  WORKS WITH txt FILE!
 //  Created by Hunter Spallas on 4/20/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
 //
