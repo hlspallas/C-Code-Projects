@@ -4,7 +4,7 @@ This GitHub repository contains a collection of some of my coding projects in C 
 
 The purpose of this repository is to track my coding projects and continually make them better and run more efficiently.
 All of these codes are no older than 2017 and a lot of them have been recently edited and added to.
-Some of the coding files require a .txt files of which I have added to a separate folder in the repository.
+Some of the coding files require a .txt files of which I have added to a separate folder in my repository called 'Text_Files'.
 
 Two of the biggest projects I have worked on include a Tic Tac Toe game against an AI and a card game called 'Joker' which is also played against an AI.
 These are in the repository as: "TICTACTOE_Game_Code" and "Joker_CardGame_Code."
