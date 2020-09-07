@@ -3,7 +3,7 @@
 
 void setup(){
 
-pinMode(LED_BUILTIN,OUTPUT);
+pinMode(LED_BUILTIN,OUTPUT);        //LED is the built-in LED on the Arduino board
 Serial.begin(9600);
 }
 
