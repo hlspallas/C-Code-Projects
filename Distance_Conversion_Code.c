@@ -1,6 +1,6 @@
 //
 //  main.c
-//  hw5p1.c
+//  
 //
 //  Created by Hunter Spallas on 2/16/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include <math.h>
+
 //Author: Hunter Spallas
 //Created: 02/18/2017
 //Input: distance in inches
@@ -39,3 +40,6 @@ int main(void) {
 
     return 0;
 }
+
+
+
