@@ -1,6 +1,6 @@
 //
 //  main.c
-//  hw3p1.c
+//  
 //
 //  Created by Hunter Spallas on 2/3/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
