@@ -2,11 +2,13 @@
 //  main.c
 //  Tic Tac Toe
 //
-//  Created by Hunter Spallas on 3/17/17.
-//  Copyright © 2017 Hunter Spallas. All rights reserved.
+//Created by Hunter Spallas on 3/17/17.
+//Copyright © 2017 Hunter Spallas. All rights reserved.
 //Author: Hunter Spallas
 //Created: 03/20/2017
 //Game: Tic Tac Toe
+
+
 #include <string.h>
 #include <stdio.h>
 #define p1 0
