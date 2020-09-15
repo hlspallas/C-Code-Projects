@@ -9,6 +9,8 @@
 // C program to compare two files and report
 // mismatches by displaying line number and
 // position of line.
+
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
@@ -76,3 +78,8 @@ int main()
     fclose(fp2);
     return 0;
 }
+
+
+
+
+
