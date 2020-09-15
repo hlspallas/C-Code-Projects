@@ -1,6 +1,6 @@
 //
 //  main.c
-//  CARD GAME WORKS WITH cards.txt FILE!
+//  JOKER CARD GAME WORKS WITH cards.txt FILE!
 //
 //  Created by Hunter Spallas on 4/5/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
@@ -17,6 +17,7 @@
 #include <math.h>
 #include <string.h>
 #include <time.h>
+
 
 typedef struct card_s{       //Defines card struct
 char suit;
@@ -457,6 +458,8 @@ int main(void) {
             printf("%d ",i);
 
         }
+        
+        
         if(Count_Deck(hand1) != 1 && Count_Deck(hand2) != 1){      //checks again for winner
 printf("\nWhich one do you want to choose(1-%d)?:\n\n", Count_Deck(hand2)); //Prompts user to choose card
             scanf("%d", &chosenNum);
@@ -464,6 +467,8 @@ printf("\nWhich one do you want to choose(1-%d)?:\n\n", Count_Deck(hand2)); //Pr
                 printf("I ONLY have %d cards\n\n",Count_Deck(hand2));
                 printf("\nWhich one do you want to choose(1-%d)?:\n\n", Count_Deck(hand2));
                 scanf("%d", &chosenNum);
+                
+                
             }
         Add_Card(&hand1, &hand2, chosenNum);  //Adds the chosen card to the opposite deck
         printf("\n");
@@ -549,3 +554,6 @@ printf("\nWhich one do you want to choose(1-%d)?:\n\n", Count_Deck(hand2)); //Pr
 
     return 0;
 }
+
+
+
