@@ -1,9 +1,9 @@
 //
 //  main.c
-//  hw6p1.c
+//  
 //
-//  Created by Hunter Spallas on 3/4/17.
-//  Copyright © 2017 Hunter Spallas. All rights reserved.
+// Created by Hunter Spallas on 3/4/17.
+// Copyright © 2017 Hunter Spallas. All rights reserved.
 // Created by: Hunter Spallas
 // Created on: 03/06/2017
 // Input: loan amount, APR, and monthly payment amount
