@@ -1,9 +1,9 @@
 //
 //  main.c
-//  8.1
+// 
 //
-//  Created by Hunter Spallas on 3/25/17.
-//  Copyright © 2017 Hunter Spallas. All rights reserved.
+// Created by Hunter Spallas on 3/25/17.
+// Copyright © 2017 Hunter Spallas. All rights reserved.
 // Author: Hunter Spallas
 // Created: 03/28/2017
 // Input: Statement
@@ -42,14 +42,6 @@ char statement[1000];
 
     printf("\n");
     printf("There are %d words in the statement\n", counter);   //Print statements
-
-
-
-
-
-
-
-
 
 
 
