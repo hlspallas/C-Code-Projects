@@ -1,6 +1,6 @@
 //
 //  main.c
-//  8.2
+//  
 //
 //  Created by Hunter Spallas on 3/26/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
@@ -69,3 +69,5 @@ int main(void) {
     fclose(inp);     //Closes file
     return 0;
 }
+
+
