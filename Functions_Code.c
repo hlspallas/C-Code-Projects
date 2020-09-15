@@ -1,6 +1,6 @@
 //
 //  main.c
-//  hw4p1.c
+// 
 //
 //  Created by Hunter Spallas on 2/8/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
@@ -10,10 +10,12 @@
 //Input: A number between 1 and 4, and a value of x.
 //Output: The value of the function
 //Relationship: The program uses the user input of x and puts it into whatever function that was tagged in a number between 1 and 4.
+
+
 #include <stdio.h>
 #include <math.h>
 
-
+//Different functions for the different operations
 
 double factorial(int n){
     double product = 1.0;
@@ -134,3 +136,6 @@ int main(void){
 
     return 0;
     }
+
+
+
