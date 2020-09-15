@@ -1,6 +1,6 @@
 //
 //  main.c
-//  hlspallas
+//  
 //
 //  Created by Hunter Spallas on 1/21/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
@@ -10,6 +10,7 @@
 #include <math.h>
 
 int main(int argc, const char * argv[]) {
+  
                                         //Tiling a Room
                                         //author: Hunter Spallas
                                         //Date created: 1/21/17
