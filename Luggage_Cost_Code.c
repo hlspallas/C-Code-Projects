@@ -1,6 +1,6 @@
 //
 //  main.c
-//  hw2p2.c
+//  
 //
 //  Created by Hunter Spallas on 1/28/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
@@ -11,6 +11,7 @@
 
 
 int main(int argc, const char * argv[]) {
+  
                                     // Author: Hunter Spallas
                                     //Date created: 1/28/17
                                     //Input: Passenger class and luggage weight
