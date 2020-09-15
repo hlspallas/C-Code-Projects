@@ -1,6 +1,6 @@
 //
 //  main.c
-//  hw3p2.c
+// 
 //
 //  Created by Hunter Spallas on 2/5/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
@@ -75,6 +75,7 @@ int main(int argc, const char * argv[]) {
     if(iterationCount > 500){
         printf("The algorithm failed; roots may be complex\n");
     } else{
+        
         printf("One of the roots of this polynomial is: %f\n", x);
 
 
