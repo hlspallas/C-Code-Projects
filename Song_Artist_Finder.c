@@ -1,6 +1,6 @@
 //
 //  main.c
-//  2
+//  
 //  WORKS WITH txt FILE!
 //  Created by Hunter Spallas on 4/20/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
@@ -104,9 +104,12 @@ int main(void) {
 
     }
     song_ptr = (song*)malloc(num*sizeof(song));
+    
+    
         while(ans != 'q' || ans != 'Q'){
     printf("Enter the name of the artist you would like to search for: ");
     scanf("%s", str);
+            
             for(i=0;i<num;i++){
                 fgets(str,100,inp);
 
@@ -124,6 +127,7 @@ int main(void) {
 
     printf("Press any key to make another search or q to quit: ");
     scanf(" %c", &ans);
+            
     if(ans == 'q' || ans == 'Q'){
         break;
     }
