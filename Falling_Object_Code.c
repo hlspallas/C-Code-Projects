@@ -1,6 +1,6 @@
 //
 //  main.c
-//  hlspallas2
+//  
 //
 //  Created by Hunter Spallas on 1/22/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
@@ -10,7 +10,7 @@
 #include <math.h>
 
 int main(int argc, const char * argv[]) {
-                                        //Code2
+                                        
                                         //author: Hunter Spallas
                                         //Date created: 1/22/17
                                         //input: object distance and constant acceleration
@@ -43,3 +43,6 @@ int main(int argc, const char * argv[]) {
 
     return 0;
 }
+
+
+
