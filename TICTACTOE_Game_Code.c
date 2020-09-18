@@ -1,12 +1,20 @@
 //
 //  main.c
+//  TicTacToe
+//
+//  Edited by Hunter Spallas on 9/15/20.
+//  Copyright © 2020 Hunter Spallas. All rights reserved.
+//
+
+//
+//  main.c
 //  Tic Tac Toe
 //
-//Created by Hunter Spallas on 3/17/17.
-//Copyright © 2017 Hunter Spallas. All rights reserved.
-//Author: Hunter Spallas
-//Created: 03/20/2017
-//Game: Tic Tac Toe
+//
+//  Copyright © 2017 Hunter Spallas. All rights reserved.
+//  Author: Hunter Spallas
+//  First Created: 03/20/2017
+//  Game: Tic Tac Toe
 
 
 #include <string.h>
@@ -16,6 +24,7 @@
 #define TIE 2
 #include <math.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 int check_board(int x[][3]){    //Checks for winner
 
@@ -108,17 +117,18 @@ void print_board(int x[][3]){          //Prints the board
 
 
 
-    printf("     |     |     \n");
-    printf("  %c  | %c   |  %c\n", x[0][0], x[0][1], x[0][2]);
-    printf("     |     |     \n");
-    printf(" ---- ----  ----\n");
-    printf("     |     |     \n");
-    printf("  %c  | %c   |  %c\n", x[1][0], x[1][1], x[1][2]);
-    printf("     |     |     \n");
-    printf(" ---- ----  ----\n");
-    printf("     |     |     \n");
-    printf("  %c  | %c   |  %c\n", x[2][0], x[2][1], x[2][2]);
-    printf("     |     |     \n");
+    printf("                      Position Coordinates\n\n");
+    printf("      |     |                |     |     \n");
+    printf("   %c  |  %c  |  %c        (0,0)|(0,1)|(0,2)\n", x[0][0], x[0][1], x[0][2]);
+    printf("      |     |                |     |     \n");
+    printf(" ----- ----- -----      ----- ----- -----\n");
+    printf("      |     |                |     |     \n");
+    printf("   %c  |  %c  |  %c        (1,0)|(1,1)|(1,2)\n", x[1][0], x[1][1], x[1][2]);
+    printf("      |     |                |     |     \n");
+    printf(" ----- ----- -----      ----- ----- -----\n");
+    printf("      |     |                |     |     \n");
+    printf("   %c  |  %c  |  %c        (2,0)|(2,1)|(2,2)\n", x[2][0], x[2][1], x[2][2]);
+    printf("      |     |                |     |     \n\n");
 
 }
 
@@ -134,22 +144,26 @@ int main(void) {
     int rval1;
     int rval2;
     int x[3][3];
-    char playerName[20];
+    char playerName[50];
     int val = 0;
     int val2 = 0;
     int i,j = 0;
     int outcome = 4;
+    int L = 1;
 
     for(i = 0;i<3;i++){               //Resets all elements of array to a blank/space
         for(j=0;j<3;j++){
             x[i][j] = 32;
-        }}
+        }
+        
+        }
 
 
     printf("Player 1 enter your name: \n");
-    scanf("%s", playerName);
+    scanf("%50[^\n]", playerName);              //Allows the user to input full name
+    
 
-    printf("%s, Let's play tic tac toe: \n\n", playerName);
+    printf("%s, Let's play Tic Tac Toe: \n\n\n", playerName);
 
 
 
@@ -157,39 +171,65 @@ int main(void) {
 
 
     while(outcome == 4){
-
-    printf("Player 1, enter an 'X':\n ");
-    scanf("%d %d", &val, &val2);
-        if(x[val][val2] == 32){           //Makes sure to only print an X if there is a blank space
+        L=1;
+        while(L == 1){
+        
+    printf("%s, enter an 'X' by typing in a coordinate point in the correct format. For example, if you want to place your 'X' in the center position, type the coordinate 1,1. :\n\n ", playerName);
+    scanf("%d,%d", &val, &val2);
+            
+            while((val != 0 && val != 1 && val != 2) || (val2 != 0 && val2 != 1 && val2 != 2)){
+                printf("\nWrong Input. Try again!\n\n");
+                
+                printf("%s, enter an 'X' by typing in a coordinate point in the correct format. For example, if you want to place your 'X' in the center position, type the coordinate 1,1. :\n\n ", playerName);
+                scanf("%d,%d", &val, &val2);
+            }
+        
+        
+        if(x[val][val2] == 32){   //Makes sure to only print an X if there is a blank space
+            
             x[val][val2] = 'X';
             printf("\n");
             print_board(x);
+            L=2;
             }
-        else if(x[val][val2] != 32){
-            printf("This is not an available spot!\n");
+        
+        else if((x[val][val2] != 32)){
+            printf("\nThis is not an available spot!\n\n");
+            
+        
+        }
+        }
+        
+        outcome = check_board(x);
+        if(outcome != 4){
+            break;
         }
         randnum(&rval1, &rval2);
-        while(x[rval1][rval2] != 32){  //Computer picks a random value but has to be in an open spot in
-            randnum(&rval1, &rval2);}  //the array
+        
+        while(x[rval1][rval2] != 32){  //Computer picks random value but has to be in an open spot in array
+            randnum(&rval1, &rval2);
+            
+        }
 
         x[rval1][rval2] = 'O';
         printf("\n");
-            print_board(x);
+        
+        print_board(x);
 
 
-        printf("The computer entered an 'O' at position: %d %d\n", rval1, rval2);
+        printf("\nThe computer entered an 'O' at position: %d,%d\n\n", rval1, rval2);
 
         outcome = check_board(x);
 
     }
     if(outcome == 2){                               //Checks to see who wins
-        printf("It's a Tie!\n");
+        printf("\nIt's a Tie!\n\n");
     }
     else if(outcome == 0){
-        printf("You win!\n");
+        printf("\nYou win!\n\n");
     }
     else if(outcome == 1){
-        printf("Computer wins!\n");
+        printf("\nComputer wins!\n\n");
     }
 
 
@@ -200,3 +240,4 @@ int main(void) {
 
         return 0;
 }
+
