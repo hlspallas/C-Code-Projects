@@ -1,5 +1,5 @@
 //
-//
+//  Works with "resistorcolor.txt"
 //
 //  First Created by Hunter Spallas on 2/12/17.
 //  Copyright © 2017 Hunter Spallas. All rights reserved.
